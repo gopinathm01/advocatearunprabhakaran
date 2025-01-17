@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S . Arun Prabhakaran - Professional Profile</title> 
+    <meta name="description" content="Professional profile of S. Arun Prabhakaran, a legal consultant specializing in Family Law, Criminal Law, Corporate Law, and Property Law.">
+    <meta name="keywords" content="S. Arun Prabhakaran, legal consultant, Family Law, Criminal Law, Corporate Law, Property Law, Chennai">
+    <meta name="author" content="S. Arun Prabhakaran">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+    <style>
+        /* Hero Section */
+        .hero {
+            background: url('./pic/court_4.jpeg');
+            background-size: cover;
+            background-blend-mode: multiply;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+    
+         .hero .container {
+            position: relative;
+        } 
+
+        .container .card {
+            height: 250px; /* Set a fixed height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+    
+        .hero img.profile-image {
+            width: 150px;
+            height: 150px;
+            border: 5px solid white;
+            object-fit: cover;
+            margin-bottom: 20px;
+            z-index: 2;
+        }
+    
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+    
+        .hero h1, .hero p {
+            position: relative;
+            z-index: 2;
+        } 
+        
+    </style> 
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+
+        /* Hero Section */
+        .hero {
+            /* background: url('https://www.transparenttextures.com/patterns/dark-wood.png'), linear-gradient(to bottom, #8B4513, #5C3317); */ 
+            background:url("./pic/court_4.jpeg");
+            background-size: cover;
+            background-blend-mode: overlay;
+            color: white;
+            text-align: center;
+            padding: 100px 40px;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .hero h1, .hero p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* Portfolio Section */
+        .portfolio .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .portfolio .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact Section */
+        .contact-info {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        } 
+
+          /* Container for the contact form */
+          .contact-form-container {
+            max-width: 1200px; /* Set a maximum width for the form */
+            margin: 0 ; /* Center the form horizontally */
+            background: #bdb4b4; /* White background for the form */
+            border: 5px solid #100e0e; /* Light border */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            padding: 20px; /* Padding inside the container */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+        }
+
+        /* Hover effect for the form container */
+        .contact-form-container:hover {
+            transform: scale(1.02); /* Slight zoom effect on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+        /* Form heading */
+        .contact-form-container h2 {
+            font-family: 'Arial', sans-serif; /* Font for the heading */
+            font-size: 28px; /* Size of the heading */
+            font-weight: bold; /* Make the heading bold */
+            color: #d9534f; /* Bootstrap "danger" red color */
+            /* text-align: center; Center align the heading */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        /* Input and select fields */
+        .contact-form-container .form-control,
+        .contact-form-container .form-select {
+            border: 1px solid #514b4b; /* Light gray border */
+            border-radius: 2px; /* Rounded corners */
+            font-size: 12px; /* Larger font size for readability */
+            padding: 8px; /* Padding inside input fields */
+            transition: border-color 0.3s, box-shadow 0.3s; /* Smooth focus effect */
+        }
+
+        /* Focus effect on inputs */
+        .contact-form-container .form-control:focus,
+        .contact-form-container .form-select:focus {
+            border-color: #d9534f; /* Red border on focus */
+            box-shadow: 0 0 5px rgba(217, 83, 79, 0.5); /* Red glow on focus */
+            outline: none; /* Remove default outline */
+        }
+
+        /* Submit button */
+        .contact-form-container .btn-danger {
+            background-color: #d9534f; /* Bootstrap "danger" red */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 18px; /* Larger font size for the button */
+            font-weight: bold; /* Bold text */
+            padding: 10px 20px; /* Padding for the button */
+            transition: background-color 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+        }
+
+        /* Hover effect for submit button */
+        .contact-form-container .btn-danger:hover {
+            background-color: #c9302c; /* Darker red on hover */
+            box-shadow: 0 4px 8px rgba(1, 0, 0, 0.2); /* Add shadow on hover */
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .contact-form-container {
+                padding: 10px; /* Reduce padding on smaller screens */
+            }
+
+            .contact-form-container h2 {
+                font-size: 24px; /* Smaller font size for the heading */
+            }
+
+            .contact-form-container .btn-danger {
+                font-size: 16px; /* Adjust button font size */
+                padding: 8px 16px; /* Adjust button padding */
+            }
+        } 
+
+                form .form-label {
+            display: block;
+            text-align: left;
+            margin-left:auto; 
+            font-weight: bold;
+            color: #1e0403; 
+        }
+
+        footer {
+            /* background: #283e51; */
+            background: url('./pic/court_4.jpeg');
+            color: white;
+            text-align: center;
+            /* padding: 50px 0;  */
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }   
+
+        .social-icons {
+            margin-bottom: 10px;
+        }
+
+        .about-me-section {
+            display: flex; /* Align image and content side by side */
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            align-items: center; /* Vertically align content */
+            gap: 20px; /* Add space between image and content */
+            padding: 40px;
+            /* background-color: #f9f9f9;  */
+            text-align: center; /* Center text for smaller screens */
+        }
+
+.image-container {
+    flex: 1;
+    text-align: center; /* Center the image in its container */
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Make the image circular */
+    /* border: 3px solid #ddd;  */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    width: 1000px; /* Fixed width for larger screens */
+}
+
+.content-container {
+    flex: 2;
+    text-align: left; /* Align text to the left */
+}
+
+.about-me-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-me-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333; /* Dark text for readability */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-me-section {
+        flex-direction: column; /* Stack image and content vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .content-container {
+        text-align: center; /* Center-align text for mobile */
+    }
+
+    .profile-image {
+        width: 150px; /* Reduce image size for smaller screens */
+    }
+}
+
+@media (max-width: 580px) {
+    .about-me-section {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .profile-image {
+        width: 300px; /* Further reduce image size for very small screens */
+    }
+
+    .about-me-section h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .about-me-section p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+}
+
+.who-we-are {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.who-we-are:hover {
+    transform: perspective(100px) rotateX(0deg) rotateY(0deg);
+    box-shadow: 10px 15px 20px rgba(1, 0, 1, 0.2);
+}
+
+.who-we-are h2 {
+    color: #333;
+    text-align: center;
+}
+
+.who-we-are p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.who-we-are b {
+    font-weight: bold;
+}
+        
+    </style>
+</head>
+<body> 
+
+    
+
+    <section class="hero">
+        <div class="container position-relative">
+            <!-- <img src="./pic/WhatsApp Image 2024-12-01 at 11.09.35 AM.jpeg" alt="Arun Prabakaran" class="rounded-circle profile-image"> -->
+            <h1>Advocate S . Arun Prabhakaran</h1>
+            <p>Delivering excellence in legal and consulting services</p>
+        </div>
+    </section>  
+
+    <div class="who-we-are">
+
+        <h2>Who We Are</h2>
+           
+       <center>
+           <p> 
+           <b>
+               RA Law Firm was initially started in 2018 by its founder Mr. S. Arun Prabhakaran. As a student and eminent sports personality 
+               in Dr. Ambedkar Government Law College Chennai from the year 2014 to 2017, he assisted numerous legal cases in the community. 
+               The associate’s office was located at No. 1, 3rd Street EVR Nagammai Nagar, Avadi, Chennai – 600062, landmark nearby Murugappa Polytechnic College.
+           </b>
+           </p>
+       </center>
+
+   </div>
+
+    <section class="about-me-section">
+        <div class="image-container">
+            <img src="./pic/arun_praba_2.jpg" alt="Arun Prabakaran" class="profile-image">
+        </div> 
+        
+
+        <div class="content-container"> 
+
+            <!-- <h2>Who We Are</h2>
+            <p>
+                RA Law Firm was initially started in 2018 by its founder Mr. S. Arun Prabhakaran. As a student and eminent sports personality 
+                in Dr. Ambedkar Government Law College Chennai from the year 2014 to 2017, he assisted numerous legal cases in the community. 
+                The associate’s office was located at No. 1, 3rd Street EVR Nagammai Nagar, Avadi, Chennai – 600062, landmark nearby Murugappa Polytechnic College.
+            </p> -->
+
+            <h2>Mr. Arun Prabhakaran</h2> 
+            <h2><right>Founder</right></h2>
+            <p>
+                <b>
+                The founder is Prabhakaran, the head of operations of the firm and legal aid. It is solely for the benefit of the people. 
+                It has been operating for the last 6 years with the aim of gaining rights. The main task is to provide free legal aid to those who 
+                cannot afford to deal with legal issues.
+                </b>
+            </p>
+
+            <!-- <h2>About Me</h2>
+            <p>
+                Hello! I am Arun Prabakaran, a dedicated professional with years of experience in legal consulting and advisory services. 
+                I specialize in providing tailored solutions to meet your unique needs, whether it's navigating complex legal challenges 
+                or offering expert guidance on property, family, and corporate law matters. My goal is to ensure your peace of mind with 
+                comprehensive and personalized support. Let's work together to achieve your objectives!
+            </p> -->
+        </div>
+    </section>
+    
+
+
+    <section>
+        <div class="container">
+            <h2>My Expertise</h2>
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5 class="card-title"><b>Property Law</b></h5>
+                        <p class="card-text">Providing detailed assistance with property transactions, disputes, and legal documentation.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5 class="card-title"> <b>Family Law</b> </h5>
+                        <p class="card-text">Ensuring clarity and resolution for family-related legal concerns, including marital and custody issues.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5 class="card-title"><b>Corporate Law</b></h5>
+                        <p class="card-text">Supporting businesses with corporate legal compliance, contracts, and dispute resolution.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5 class="card-title"><b>Criminal Law</b></h5>
+                        <p class="card-text">Specializes in defending or prosecuting individuals accused of crimes, ranging from misdemeanors to felonies, ensuring legal rights are upheld throughout criminal procedures.</p>
+                    </div>
+                </div> 
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5 class="card-title"><b>Environmental Law</b></h5>
+                        <p class="card-text"> Focuses on regulations protecting the environment, dealing with cases related to pollution, conservation, and compliance with environmental laws.</p>
+                    </div>
+                </div> 
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5 class="card-title"><b>Labor and Employment Law</b></h5>
+                        <p class="card-text">Covers workplace issues such as discrimination, harassment, wrongful termination, and ensures compliance with labor laws, while also advising on employment contracts and labor relations.</p>
+                    </div>
+                </div>  
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5 class="card-title"><b>Constitutional Law</b></h5>
+                        <p class="card-text">Interprets constitutional rights, addresses challenges to laws, and advises on civil rights, ensuring government actions comply with constitutional provisions.</p>
+                    </div>
+                </div> 
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5 class="card-title"><b>Tax Law</b></h5>
+                        <p class="card-text">Provides guidance on tax planning and compliance, representing clients in disputes with tax authorities, and advising on personal and corporate tax strategies.</p>
+                    </div>
+                </div>  
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5 class="card-title"><b>Immigration Law</b></h5>
+                        <p class="card-text">Assists with visas, green cards, citizenship, and deportation cases, while advising businesses on employing foreign workers and navigating complex immigration processes.</p>
+                    </div>
+                </div> 
+
+
+
+            </div>
+        </div>
+    </section>
+
+<section>
+    <div class="container">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <p><strong>Address:</strong>
+                No. 1, 3rd Street, EVR Nagammai Nagar, Avadi, Chennai - 600062<br>
+                Landmark: Near Murugappa Polytechnic College
+            </p>
+            <p><strong>Email:</strong> arunprabha93@gmail.com</p>
+            <p><strong>Phone:</strong> 8807214940</p>
+        </div>
+        <div class="contact-form-container p-4 border rounded shadow-sm bg-light">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- <input type="hidden" name="access_key" value="1c4d4e29-a92e-49d7-a7ef-9feee10dab26"> -->
+                <input type="hidden" name="access_key" value="167d065e-338f-464e-a23f-998ea95728a4">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">Name <span class="text-danger">*</span></label>
+                        <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">&nbsp;</label>
+                        <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Last">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="example@email.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Comment or Message <span class="text-danger">*</span></label>
+                    <textarea id="message" name="message" class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="contactNumber" class="form-label">Contact Number <span class="text-danger">*</span></label>
+                    <input type="tel" id="contactNumber" name="contactNumber" class="form-control" placeholder="Enter your contact number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="consultancy" class="form-label">Consultancy need for</label>
+                    <select id="consultancy" name="consultancy" class="form-select">
+                        <option selected>Family Law</option>
+                        <option>Criminal Law</option>
+                        <option>Corporate Law</option>
+                        <option>Property Law</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a> 
+    </div>
+
+
+    <footer> 
+               
+        
+        <p>&copy; 2024 Arun Prabakaran. All Rights Reserved.</p> 
+        <div align="corners" class="designby"> 
+            design by Gopinath
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
